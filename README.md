@@ -1,3 +1,9 @@
+##
+
+This is a fork of the `react-beautiful-dnd` project, done by AdaptableTools.
+
+The only change is to add support for React 19.
+
 ## ⚠️ Deprecated
 
 Hey all,
