@@ -23,11 +23,12 @@
     "url": "https://github.com/adaptabletools/react-beautiful-dnd/issues"
   },
   "main": "dist/react-beautiful-dnd.cjs.js",
+  "types": "types/index.d.ts",
   "module": "dist/react-beautiful-dnd.esm.js",
   "sideEffects": false,
   "files": [
     "/dist",
-    "/src"
+    "/types"
   ],
   "config": {
     "prettier_target": "*.{js,jsx,md,json} src/**/*.{js,jsx,md,json} test/**/*.{js,jsx,md,json} docs/**/*.{js,jsx,md,json} stories/**/*.{js,jsx,md,json} cypress/**/*.{js,jsx,md,json} csp-server/**/*.{js,jsx,md,json}"
