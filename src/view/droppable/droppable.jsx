@@ -23,7 +23,24 @@ import AnimateInOut, {
 } from '../animate-in-out/animate-in-out';
 import { PrivateDraggable } from '../draggable/draggable-api';
 
-export default function Droppable(props: Props) {
+function getBody(): HTMLElement {
+  invariant(document.body, 'document.body is not ready');
+  return document.body;
+}
+
+const defaultProps = {
+  mode: 'standard',
+  type: 'DEFAULT',
+  direction: 'vertical',
+  isDropDisabled: false,
+  isCombineEnabled: false,
+  ignoreContainerClipping: false,
+  renderClone: null,
+  getContainerForClone: getBody,
+};
+
+export default function Droppable(propsWithoutDefaults: Props) {
+  const props = { ...defaultProps, ...propsWithoutDefaults };
   const appContext: ?AppContextValue = useContext<?AppContextValue>(AppContext);
   invariant(appContext, 'Could not find app context');
   const { contextId, isMovementAllowed } = appContext;
