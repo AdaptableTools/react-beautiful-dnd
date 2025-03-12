@@ -1,6 +1,6 @@
 // @flow
 import React, { useState, useRef, useEffect, type Node } from 'react';
-import { useCallback } from 'use-memo-one';
+import { useCallback } from '../../use-memo-one';
 import type { Spacing } from 'css-box-model';
 import type {
   Placeholder as PlaceholderType,
