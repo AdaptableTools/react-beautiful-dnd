@@ -3,7 +3,7 @@
 // @flow
 import React, { useState, useEffect } from 'react';
 import styled from '@emotion/styled';
-import { useCallback } from 'use-memo-one';
+import { useCallback } from 'react';
 import type { Quote } from '../types';
 import type {
   DropResult,

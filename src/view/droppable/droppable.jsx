@@ -1,6 +1,6 @@
 // @flow
 import ReactDOM from 'react-dom';
-import { useMemo, useCallback } from 'use-memo-one';
+import { useMemo, useCallback } from '../../use-memo-one';
 import React, { useRef, useContext, type Node } from 'react';
 import { invariant } from '../../invariant';
 import type { DraggableId } from '../../types';

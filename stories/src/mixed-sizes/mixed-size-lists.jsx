@@ -2,7 +2,7 @@
 import { colors } from '@atlaskit/theme';
 import styled from '@emotion/styled';
 import React, { useState } from 'react';
-import { useMemo } from 'use-memo-one';
+import { useMemo } from 'react';
 import {
   DragDropContext,
   Draggable,

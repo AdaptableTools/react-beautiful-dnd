@@ -1,6 +1,6 @@
 // @flow
 import { useEffect } from 'react';
-import { useMemo } from 'use-memo-one';
+import { useMemo } from '../../use-memo-one';
 import type { ContextId, ElementId } from '../../types';
 import getBodyElement from '../get-body-element';
 import useUniqueId from '../use-unique-id';
